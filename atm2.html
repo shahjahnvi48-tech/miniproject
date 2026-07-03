@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Machine</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:#f0f0f0;
+        }
+
+        .atm{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+            text-align:center;
+            width:300px;
+        }
+
+        input, button{
+            width:90%;
+            padding:10px;
+            margin:5px;
+        }
+
+        h2{
+            color:green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="atm">
+    <h2>ATM Machine</h2>
+
+    <p>Balance: ₹<span id="balance">5000</span></p>
+
+    <input type="number" id="amount" placeholder="Enter Amount">
+
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+
+    <p id="msg"></p>
+</div>
+
+<script>
+    let balance = 5000;
+
+    function deposit() {
+        let amt = Number(document.getElementById("amount").value);
+        
+
+
+        balance += amt;
+
+        document.getElementById("balance").innerText = balance;
+        document.getElementById("msg").innerText =
+            "₹" + amt + " Deposited Successfully";
+    }
+
+    function withdraw() {
+        let amt = Number(document.getElementById("amount").value);
+
+        if (amt <= balance) {
+            balance -= amt;
+
+            document.getElementById("balance").innerText = balance;
+            document.getElementById("msg").innerText =
+                "₹" + amt + " Withdrawn Successfully";
+        } else {
+            document.getElementById("msg").innerText =
+                "Insufficient Balance";
+        }
+    }
+</script>
+
+</body>
+</html>

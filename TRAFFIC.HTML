@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic Signal</title>
+
+<style>
+
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#87CEEB;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.signal{
+    width:120px;
+    background:#222;
+    padding:20px;
+    border-radius:20px;
+    margin:auto;
+}
+
+.light{
+    width:70px;
+    height:70px;
+    background:#555;
+    border-radius:50%;
+    margin:15px auto;
+}
+
+.red.active{
+    background:red;
+    box-shadow:0 0 25px red;
+}
+
+.yellow.active{
+    background:yellow;
+    box-shadow:0 0 25px yellow;
+}
+
+.green.active{
+    background:lime;
+    box-shadow:0 0 25px lime;
+}
+
+.pole{
+    width:20px;
+    height:180px;
+    background:#444;
+    margin:auto;
+}
+
+.base{
+    width:120px;
+    height:20px;
+    background:#444;
+    margin:auto;
+    border-radius:10px;
+}
+
+#status{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Traffic Signal</h1>
+
+<div class="signal">
+
+<div id="red" class="light red"></div>
+
+<div id="yellow" class="light yellow"></div>
+
+<div id="green" class="light green"></div>
+
+</div>
+
+<div class="pole"></div>
+<div class="base"></div>
+
+<p id="status">Red - Stop</p>
+
+<button onclick="changeSignal()">Next Signal</button>
+
+</div>
+
+<script src="traffic.js"></script>
+
+</body>
+</html>

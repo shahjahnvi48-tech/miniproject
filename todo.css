@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:420px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:2px solid #4facfe;
+    border-radius:8px;
+    font-size:16px;
+    outline:none;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    background:#4facfe;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#008cff;
+}
+
+ul{
+    margin-top:20px;
+}
+
+li{
+    list-style:none;
+    background:#f4f4f4;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.3s;
+}
+
+li:hover{
+    background:#e8e8e8;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+    background:#d7ffd7;
+}
+
+.actions button{
+    margin-left:5px;
+    padding:6px 10px;
+    font-size:14px;
+}
+
+.complete-btn{
+    background:green;
+}
+
+.delete-btn{
+    background:red;
+}

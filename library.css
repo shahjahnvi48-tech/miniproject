@@ -1,0 +1,64 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+}
+
+.container{
+    width:70%;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    text-align:center;
+}
+
+input{
+    padding:10px;
+    margin:10px 5px;
+    width:35%;
+}
+
+button{
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+.issue{
+    background:orange;
+    color:white;
+    border:none;
+    padding:6px 10px;
+}
+
+.return{
+    background:green;
+    color:white;
+    border:none;
+    padding:6px 10px;
+}
+
+.delete{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 10px;
+}
